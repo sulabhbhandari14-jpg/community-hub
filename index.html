@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CommunityCare — find support, wellbeing services and local events in your community." />
+  <title>CommunityCare — Find your balance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="site-shell">
+    <section class="hero-panel" id="home">
+      <div class="hero-photo"></div>
+      <header class="navbar">
+        <a class="brand" href="#home" aria-label="CommunityCare home"><span class="brand-mark">✳</span><span>community<span class="brand-light">care</span><small>WELLBEING HUB</small></span></a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="active" href="#home">Home</a><a href="#about">About us</a><a href="#services">Services</a><a href="#events">Events</a><a href="#stories">Stories</a><a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="#booking">Get support <span>↗</span></a>
+      </header>
+
+      <div class="hero-content" id="about">
+        <div class="social-proof"><span class="avatar-stack"><i>J</i><i>A</i><i>M</i></span><span><b>1,200+</b> neighbours found their way forward</span></div>
+        <p class="eyebrow">A stronger community starts with you</p>
+        <h1>Find your <em>balance.</em><br><span>Live with intention.</span></h1>
+        <p class="hero-copy">A welcoming place to connect, grow and feel supported. Discover local services, meet your neighbours and take a small step towards a brighter day.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#services">Explore our services <span>↗</span></a><a class="btn btn-outline" href="#about-more">Our community <span>↓</span></a></div>
+      </div>
+
+      <div class="hero-bottom" id="about-more">
+        <div class="bottom-feature"><span class="feature-icon">✿</span><span><b>Nature inspired</b><small>Space to pause and recharge</small></span></div>
+        <div class="bottom-feature"><span class="feature-icon">♡</span><span><b>Mindful living</b><small>Support for everyday wellbeing</small></span></div>
+        <div class="bottom-feature"><span class="feature-icon">♧</span><span><b>Community driven</b><small>Stronger, together</small></span></div>
+        <div class="bottom-feature"><span class="feature-icon">✧</span><span><b>Lasting impact</b><small>Small steps, real change</small></span></div>
+      </div>
+      <span class="hero-stamp" aria-hidden="true">✳</span>
+    </section>
+
+    <div class="right-column">
+      <section class="services-panel" id="services">
+        <div class="section-kicker"><span>HERE FOR EVERY PART OF YOU</span><span class="tiny-line"></span></div>
+        <div class="services-grid">
+          <a class="service-card mint" href="#booking" data-service="Mental wellbeing"><span class="service-icon">☼</span><h3>Mental wellbeing</h3><p>Friendly support to help you feel calmer, stronger and heard.</p><span class="card-arrow">↗</span></a>
+          <a class="service-card lemon" href="#booking" data-service="Healthy living"><span class="service-icon">⌁</span><h3>Healthy living</h3><p>Simple ways to build healthy habits and feel your best.</p><span class="card-arrow">↗</span></a>
+          <a class="service-card pink" href="#booking" data-service="Family support"><span class="service-icon">♡</span><h3>Family support</h3><p>Practical guidance for families through life's changes.</p><span class="card-arrow">↗</span></a>
+          <a class="service-card lilac" href="#booking" data-service="Community groups"><span class="service-icon">♧</span><h3>Community groups</h3><p>Meet people, share experiences and feel you belong.</p><span class="card-arrow">↗</span></a>
+          <a class="service-card blue" href="#booking" data-service="Learning and skills"><span class="service-icon">⌘</span><h3>Learning & skills</h3><p>Discover workshops and opportunities to grow.</p><span class="card-arrow">↗</span></a>
+          <a class="service-card periwinkle" href="#booking" data-service="Advice and guidance"><span class="service-icon">☏</span><h3>Advice & guidance</h3><p>Find clear information and a helping hand when needed.</p><span class="card-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="events-panel" id="events">
+        <div class="events-heading"><div><span class="section-kicker light-kicker">MAKE TIME FOR WHAT MATTERS</span><h2>Moments that <em>bring us together.</em></h2></div><a class="all-events" href="#event-list">View all <span>↗</span></a></div>
+        <div class="featured-event">
+          <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1000&q=85" alt="People enjoying a community outdoor music event" onerror="this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1000&q=85'">
+          <div class="featured-overlay"><span class="event-tag">FEATURED COMMUNITY EVENT</span><h3>Good days.<br><em>Great company.</em></h3><p>Live music, friendly faces and a little time for you.</p><a href="#booking" class="event-button" data-book-event="Community Summer Gathering">Save your place <span>↗</span></a></div>
+          <div class="event-date"><b>22</b><span>JUN<br>2027</span></div>
+        </div>
+        <div class="upcoming-head" id="event-list"><h3>Upcoming events</h3><div class="event-filters" role="group" aria-label="Filter events"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="wellbeing">Wellbeing</button><button class="filter" data-filter="community">Community</button></div></div>
+        <div class="event-cards">
+          <article class="event-card" data-category="wellbeing"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Yoga and mindfulness session"><div class="event-card-body"><span class="event-meta">18 JUN · WELLBEING</span><h4>Morning mindfulness</h4><p>A gentle start to your day.</p><a href="#booking" data-book-event="Morning Mindfulness">Find out more <span>↗</span></a></div></article>
+          <article class="event-card" data-category="community"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80" alt="Friends sharing time together"><div class="event-card-body"><span class="event-meta">24 JUN · COMMUNITY</span><h4>Neighbourhood picnic</h4><p>Bring a smile, bring a friend.</p><a href="#booking" data-book-event="Neighbourhood Picnic">Find out more <span>↗</span></a></div></article>
+          <article class="event-card" data-category="wellbeing"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Outdoor movement and fitness class"><div class="event-card-body"><span class="event-meta">29 JUN · WELLBEING</span><h4>Move together</h4><p>Feel-good movement for all.</p><a href="#booking" data-book-event="Move Together">Find out more <span>↗</span></a></div></article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="lower-section" id="stories">
+    <div><span class="section-kicker">REAL PEOPLE, REAL CONNECTION</span><h2>Good things grow <em>together.</em></h2></div>
+    <p>Every community is made of small moments: a conversation, a helping hand, a new friendship. Explore stories from people who make our neighbourhood special.</p>
+    <a class="btn btn-dark" href="#contact">Share your story <span>↗</span></a>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <div class="booking-intro"><span class="section-kicker">YOUR NEXT STEP STARTS HERE</span><h2>Let's find the <em>right support</em> for you.</h2><p>Tell us a little about what you're looking for and our team can help you find a suitable service or event.</p><div class="contact-note"><span>✳</span><span><b>You are welcome here.</b><small>Our community is for everyone.</small></span></div></div>
+    <form class="booking-form" id="bookingForm">
+      <div class="form-heading"><h3>Get in touch</h3><span>We'll be in touch soon</span></div>
+      <label for="fullName">Your name</label><input id="fullName" name="name" type="text" placeholder="e.g. Alex Morgan" required>
+      <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+      <label for="interest">I'm interested in</label><select id="interest" name="interest" required><option value="">Choose a service or event</option><option>Mental wellbeing</option><option>Healthy living</option><option>Family support</option><option>Community groups</option><option>Learning & skills</option><option>Advice & guidance</option><option>Upcoming events</option></select>
+      <label for="message">How can we help? <span>(optional)</span></label><textarea id="message" name="message" rows="3" placeholder="Tell us a little about what you need..."></textarea>
+      <button class="btn btn-dark submit-btn" type="submit">Send my enquiry <span>↗</span></button><p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      <small class="privacy-note">This demo form shows a confirmation only. It does not send or store personal information.</small>
+    </form>
+  </section>
+
+  <footer class="footer" id="contact"><a class="brand footer-brand" href="#home"><span class="brand-mark">✳</span><span>community<span class="brand-light">care</span><small>WELLBEING HUB</small></span></a><p>A little more connected. A little more supported.</p><div><a href="#services">Services</a><a href="#events">Events</a><a href="#booking">Contact</a></div><small>© 2027 CommunityCare · Student website prototype</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
